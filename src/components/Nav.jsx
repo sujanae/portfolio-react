@@ -13,8 +13,11 @@ const Nav = () => {
               <Link activeClass='active' smooth={true} spy={true} to='about' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                 <BiUser />
               </Link>
-              <Link activeClass='active' smooth={true} spy={true} to='project' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+              <Link activeClass='active' smooth={true} spy={true} to='skills' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                 <BsBriefcase/>
+              </Link>
+              <Link activeClass='active' smooth={true} spy={true} to='project' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+                <BsClipboardData/>
               </Link>
               <Link activeClass='active' smooth={true} spy={true} to='contact' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                 <BsChatSquareText/>

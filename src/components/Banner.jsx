@@ -31,7 +31,7 @@ const Banner = () => {
             initial='hidden' 
             whileInView={'show'} 
             viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'> 
-            I am a Passionate software developer with expertise in Flutter and web technologies. I love building innovative projects, solving complex problems, and collaborating with others. I document my coding journey to inspire and reflect on my continuous growth in technology.
+            I am a Passionate software developer with expertise in Flutter and web technologies. I love building innovative projects, solving complex problems, and collaborating with others. 
             </motion.p>
             <motion.div 
             variants={fadeIn('up', 0.6)} 
