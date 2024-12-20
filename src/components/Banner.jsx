@@ -1,0 +1,57 @@
+import React from 'react';
+import Img from '../assets/avatar.svg';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+import { TypeAnimation } from 'react-type-animation';
+import {FaGithub,FaLinkedin, FaInstagram,FaYoutube} from 'react-icons/fa'
+
+const Banner = () => {
+  return (
+    <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
+      <div className='container mx-auto'>
+        <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
+          {/* text */}
+          <div className='flex-1 text-center font-secondary lg:text-left'>
+            <motion.h1 variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>SUJAN <span>L</span></motion.h1>
+            <div className='mb-6 lg:
+            text-[50px] font-secondary font-semibold uppercase leading-[1]'>
+              <span className='text-white mr-4'>I am a</span> 
+              <TypeAnimation sequence={['Flutter Developer', 2000, 'React Developer', 2000]} speed={50} className='text-accent' wrapper='span' repeat={Infinity} />
+              </div>
+          <p className='mb-8 max-w-lg mx-auto lg:mx-0'> 
+            I am a Passionate software developer with expertise in Flutter and web technologies. I love building innovative projects, solving complex problems, and collaborating with others. I document my coding journey to inspire and reflect on my continuous growth in technology.
+            </p>
+            <div className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'><button className='btn btn-lg'>Get Resume</button>
+            <a href="#" className='text-gradient btn-link'>
+               MY PORTFOLIO
+              </a>
+              </div>
+              {/* socials */}
+              <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg'>
+                <a href="#">
+                  <FaGithub/>
+                </a>
+                <a href="#">
+                  <FaLinkedin/>
+                </a>
+                <a href="#">
+                  <FaYoutube/>
+                </a>
+                <a href="#">
+                  <FaInstagram/>
+                </a>
+              </div>
+              </div>
+          {/* image */}
+          <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+            <img src={Img} alt='' />
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+  );
+};
+
+export default Banner;
