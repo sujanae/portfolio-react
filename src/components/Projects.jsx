@@ -15,7 +15,8 @@ const Projects = () => {
           <motion.div  variants={fadeIn('right', 0.3)} 
                                 initial='hidden' 
                                 whileInView={'show'} 
-                                viewport={{ once: false, amount: 0.7 }} className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
+                                viewport={{ once: false, amount: 0.7 }} 
+                                className="flex-1 flex flex-col gap-y-14 mb-10 lg:mb-0">
             {/* Text Section */}
             <div>
               <h2 className="text-4xl font-bold text-gradient mb-4">
