@@ -43,7 +43,7 @@ const Banner = () => {
               </a>
               </motion.div>
               {/* socials */}
-              <motion.div 
+              {/* <motion.div 
               variants={fadeIn('up', 0.7)} 
             initial='hidden' 
             whileInView={'show'} 
@@ -60,7 +60,7 @@ const Banner = () => {
                 <a href="#">
                   <FaInstagram/>
                 </a>
-              </motion.div>
+              </motion.div> */}
               </div>
           {/* image */}
           <motion.div variants={fadeIn('down', 0.5)} 

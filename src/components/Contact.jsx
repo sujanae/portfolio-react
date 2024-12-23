@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { TypeAnimation } from 'react-type-animation';
+
 
 const Contact = () => {
   return (
@@ -18,9 +20,24 @@ const Contact = () => {
           >
             <div>
               <h4 className="text-4xl font-bold text-gradient mb-4 tracking-wide">Get In Touch</h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's connect <br /> on social media!
-              </h2>
+              <h2 className="text-[45px] lg:text-[45px] leading-none mb-12">
+              Let's{' '}
+                <TypeAnimation
+                  sequence={[
+                    'connect on Instagram!', // Type this
+                    2000, // Keep it for 2 seconds
+                    'connect on Youtube!', // Replace and type this
+                    2000, // Keep it for 2 seconds
+                    'connect on LinkedIn!', // Replace and type this
+                    2000, // Keep it for 2 seconds
+                    'connect on GitHub!', // Replace and type this
+                    2000, // Keep it for 2 seconds
+                  ]}
+                  speed={50}
+                  className="text-accent"
+                  wrapper="span"
+                  repeat={Infinity}
+                />              </h2>
             </div>
           </motion.div>
           {/* social links */}
@@ -29,10 +46,10 @@ const Contact = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-6 items-start"
+            className="flex-1 flex flex-col gap-y-10 items-start mt-12 lg:mt-0"
           >
             <a
-              href="https://www.instagram.com/your-profile"
+              href="https://www.instagram.com/_.sujan._/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl flex items-center gap-x-3 hover:text-accent transition"
@@ -40,15 +57,16 @@ const Contact = () => {
               <FaInstagram /> Instagram
             </a>
             <a
-              href="https://www.twitter.com/your-profile"
+              href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl flex items-center gap-x-3 hover:text-accent transition"
             >
-              <FaTwitter /> Twitter
+              <FaYoutube /> Youtube
             </a>
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/sujan-loganathan"
+              
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl flex items-center gap-x-3 hover:text-accent transition"
@@ -56,7 +74,7 @@ const Contact = () => {
               <FaLinkedin /> LinkedIn
             </a>
             <a
-              href="https://www.github.com/your-profile"
+              href="https://www.github.com/sujanae"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl flex items-center gap-x-3 hover:text-accent transition"
