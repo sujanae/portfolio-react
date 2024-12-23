@@ -3,7 +3,7 @@ import Img from '../assets/avatar.svg';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { TypeAnimation } from 'react-type-animation';
-import {FaGithub,FaLinkedin, FaInstagram,FaYoutube} from 'react-icons/fa'
+
 
 const Banner = () => {
   return (
@@ -42,25 +42,7 @@ const Banner = () => {
                MY PORTFOLIO
               </a>
               </motion.div>
-              {/* socials */}
-              {/* <motion.div 
-              variants={fadeIn('up', 0.7)} 
-            initial='hidden' 
-            whileInView={'show'} 
-            viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-4  max-w-max  lg:mx-0'>
-                <a href="#">
-                  <FaGithub/>
-                </a>
-                <a href="#">
-                  <FaLinkedin/>
-                </a>
-                <a href="#">
-                  <FaYoutube/>
-                </a>
-                <a href="#">
-                  <FaInstagram/>
-                </a>
-              </motion.div> */}
+             
               </div>
           {/* image */}
           <motion.div variants={fadeIn('down', 0.5)} 
